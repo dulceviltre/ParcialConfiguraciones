@@ -4,11 +4,14 @@ spring:
   application:
     name: movie-service
   datasource:
-    driverClassName: com.mysql.cj.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3366/movie-dev
     username: usr-movie
     password: pwd-movie
   jpa:
-    hibernate.ddl-auto: update
-    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
     show-sql: true
