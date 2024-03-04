@@ -3,9 +3,8 @@ server:
 spring:
   application:
     name: movie-service
-spring:
   profiles:
-    active: dev
+    active: dev,debug
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3366/movie-dev
