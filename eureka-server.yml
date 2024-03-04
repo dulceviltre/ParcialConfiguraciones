@@ -7,3 +7,6 @@ eureka:
     lease-expiration-duration-in-seconds: '90'
 server:
   port: '8761'
+spring:
+  application:
+    name: eureka
