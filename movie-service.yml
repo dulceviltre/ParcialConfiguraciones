@@ -6,7 +6,7 @@ spring:
   profiles:
     active: movie-dev
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3366/movie-dev
     username: usr-movie
     password: pwd-movie
